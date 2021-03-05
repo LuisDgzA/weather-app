@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-4">
+        <div class="container shadow-lg div-current-day " id="divMain" >
+            <div class="text-center text-responsive" id="currentLocation"></div>
+            <div class="row align-items-center">
+                <div class="col-8 col-sm-7 mr-0 text-right"><canvas  id="iconCurrentDay" width="190px"></canvas></div>
+                <div class="col-4 col-sm-5 ml-0 p-0 text-left">
+                    <div class="fontBig text-responsive degrees" id="currentMinTemperature"></div>
+                    <hr class="separator">
+                    <div class="fontBig text-responsive degrees" id="currentMaxTemperature"></div>
+                    
+                </div>
+            </div>
+            
+            <h1 class="text-center text-responsive degrees" id="currentMainTemperature"></h1>
+            <h2 class="text-center mb-5 text-responsive" id="time"></h2>
+            <div class="row  mt-5" id="divForecast">
+                <div class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-between align-items-center" id="divForecastDay1">
+                    <div class="text-center font-responsive-big" id="day1">Martes</div>
+                    <div class="text-center ml-auto ml-sm-0"><canvas class="icon-weather" id="iconDay1" width="100px"></canvas></div>
+                    <div class="text-center ml-4 d-flex align-items-center font-responsive-big"><span class="mr-4 degrees" id="mainTemperature1"></span><span class="font-little " id="extraTemperatures1"></span></div>
+                    
+                </div>
+                <div class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-between align-items-center" id="divForecastDay2">
+                    <h3 class="text-center font-responsive-big" id="day2">Miercoles</h3>
+                    <div class="text-center ml-auto ml-sm-0"><canvas class="icon-weather" id="iconDay2" width="100px"></canvas></div>
+                    <div class="text-center ml-4 d-flex align-items-center font-responsive-big"><span class="mr-4 degrees" id="mainTemperature2"></span><span class="font-little " id="extraTemperatures2"></span></div>
+                </div>
+                <div class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-between align-items-center" id="divForecastDay3">
+                    <h3 class="text-center font-responsive-big" id="day3">Jueves</h3>
+                    <div class="text-center ml-auto ml-sm-0"><canvas class="icon-weather" id="iconDay3" width="100px"></canvas></div>
+                    <div class="text-center ml-4 d-flex align-items-center font-responsive-big"><span class="mr-4 degrees" id="mainTemperature3"></span><span class="font-little " id="extraTemperatures3"></span></div>
+                </div>
+                <div class="col-12 col-md-3 d-flex flex-row flex-md-column justify-content-between align-items-center" id="divForecastDay4">
+                    <h3 class="text-center font-responsive-big" id="day4">Viernes</h3>
+                    <div class="text-center ml-auto ml-sm-0"><canvas class="icon-weather" id="iconDay4" width="100px"></canvas></div>
+                    <div class="text-center ml-4 d-flex align-items-center font-responsive-big"><span class="mr-4 degrees" id="mainTemperature4"></span><span class="font-little " id="extraTemperatures4"></span></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/skycons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

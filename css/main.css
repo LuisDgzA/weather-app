@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+    font-family: 'Poppins',  sans-serif;
+}
+
+.night{
+      background: rgb(36, 36, 125);
+      background: linear-gradient(0deg, rgba(36, 36, 125, 0.9107843821122199) 0%, rgba(35, 14, 70, 1) 100%);
+     color: #fff;
+}
+
+.partly-cloudy-day {
+    background: rgb(114, 191, 201);
+    background: linear-gradient(180deg, rgba(114, 191, 201, 1) 0%, rgba(227, 227, 193, 1) 100%);
+    color: #000 ;
+}
+
+.sunny{
+    background: rgb(226, 123, 3);
+    background: linear-gradient(0deg, rgba(226, 123, 3, 0.9107843821122199) 0%, rgba(198, 210, 92, 1) 100%);
+    color: #000;
+}
+
+.cloudy{
+    background: rgb(200, 200, 200);
+    background: linear-gradient(0deg, rgba(200, 200, 200, 1) 0%, rgba(122, 122, 122, 1) 100%);
+    color: #000;
+}
+
+.rainy{
+    background: rgb(31, 44, 107);
+    background: linear-gradient(0deg, rgba(31, 44, 107, 1) 0%, rgba(64, 101, 164, 1) 100%);
+    color: #fff;
+}
+
+.windy{
+    background: rgb(190, 190, 190);
+    background: linear-gradient(0deg, rgba(190, 190, 190, 1) 0%, rgba(62, 136, 142, 1) 100%);
+    color: #000;
+}
+
+.fontBig{
+    font-size: 1.4rem;
+}
+
+.separator{
+    margin: 0;
+    padding:0;
+    border: 0;
+    border-top: 1px solid rgb(199, 199, 199);
+    width: 25px;
+}
+
+.font-responsive-big{
+    font-size: calc(1em + 1vw);
+}
+
+.font-little {
+    font-size: 0.6em;
+    
+}
+
+#currentLocation{
+    font-weight: 700;
+}
+
+@media (max-width: 500px){
+    .icon-weather{
+        width:30px;
+        margin-left:0;
+        left:0;
+    }
+    .container-icon{
+        margin-left:0;
+        left: 0;
+    }
+    .font-little{
+        font-size: 0.8em;
+    }
+   
+}
+
+.degrees::after{
+    content: "°";
+}
