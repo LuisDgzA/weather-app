@@ -16,6 +16,6 @@ Live: https://luisdgza.github.io/weather-app/
 
 - HTML
 - JS
- - API openweathermap
+  - API openweathermap
 - CSS
   - Bootstrap 4
