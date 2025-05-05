@@ -69,7 +69,7 @@ function convertHour(hour){
 
 function renewValues(){
     
-        let urlAPICurrent = 'http://api.openweathermap.org/data/2.5/weather?lat='+coords.latitude +'&lon='+coords.longitude+'&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
+        let urlAPICurrent = 'https://api.openweathermap.org/data/2.5/weather?lat='+coords.latitude +'&lon='+coords.longitude+'&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
         fetch(urlAPICurrent)
             .then(response => response.json())
             .then(currentWeather =>{
