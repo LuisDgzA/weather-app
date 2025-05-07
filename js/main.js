@@ -26,7 +26,7 @@ function setTime(){
     var minutos = date.getMinutes();
     var segundos = date.getSeconds();
     var meridiano = date.getHours() < 12 ? "AM" : "PM";
-    if(hora == 7 && minutos == 00 && segundos == 0 && meridiano == "PM"  ){
+    if(hora == 7 && minutos == "00" && segundos == 0 && meridiano == "PM"  ){
         resetClasses();
         renewValues();
     }
@@ -69,7 +69,7 @@ function convertHour(hour){
 
 function renewValues(){
     
-        let urlAPICurrent = 'https://api.openweathermap.org/data/2.5/weather?lat='+coords.latitude +'&lon='+coords.longitude+'&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
+        let urlAPICurrent = 'https://api.openweathermap.org/data/3.0/weather?lat='+coords.latitude +'&lon='+coords.longitude+'&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
         fetch(urlAPICurrent)
             .then(response => response.json())
             .then(currentWeather =>{
@@ -80,7 +80,7 @@ function renewValues(){
                                     
 
         })
-        let urlAPIForecast = 'https://api.openweathermap.org/data/2.5/onecall?lat='+coords.latitude+'&lon='+coords.longitude+'&exclude=hourly,minutely&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
+        let urlAPIForecast = 'https://api.openweathermap.org/data/3.0/onecall?lat='+coords.latitude+'&lon='+coords.longitude+'&exclude=hourly,minutely&appid=b31a4dc735c0601f6143f5c67ab6fe9d&units=metric';
         fetch(urlAPIForecast)
             .then(response => response.json())
             .then(forecastWeather =>{
